@@ -15,17 +15,15 @@ int         is_power_of_2(unsigned int n)
 	return (1);
 }
 
-//int	    is_power_of_2(unsigned int n)
-//{
-  //  return (n > 0 && 1 & (n-1));
-//}
-
-
+// int	    is_power_of_2(unsigned int n)
+// {
+//     if (n == 0)
+//         return (0);
+//     return ((n & (n-1)) == 0);
+// }
 
 int main(int ac, char **av)
 {
-    if (is_power_of_2(atoi(av[1])))
-        printf("True");
-    else
-        printf("False");
+    if (is_power_of_2(15)) printf("T\n");
+    else printf("F\n");
 }
